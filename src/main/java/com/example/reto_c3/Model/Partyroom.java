@@ -23,12 +23,13 @@ public class Partyroom {
     private Category category;
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "partyroom")
+    @JsonIgnoreProperties({"partyroom", "client"})
+    public List<Message> messages;
+
+    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "partyroom")
     @JsonIgnoreProperties({"partyroom","messages"})
     public List<Reservation> reservations;
 
-    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "partyroom")
-    @JsonIgnoreProperties({"partyroom", "client"})
-    public List<Message> messages;
 
     public Integer getId() {
         return id;
