@@ -1,6 +1,5 @@
 package com.example.reto_c3.Controller;
 
-
 import com.example.reto_c3.Model.Partyroom;
 import com.example.reto_c3.Service.PartyroomService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +32,17 @@ public class PartyroomController {
     @ResponseStatus(HttpStatus.CREATED)
     public Partyroom save(@RequestBody Partyroom client){
         return partyroomService.save(client);
+    }
+
+    @PutMapping("/update")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Partyroom update(@RequestBody Partyroom partyroom){
+        return partyroomService.update(partyroom);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public boolean delete(@PathVariable("id") int id){
+        return partyroomService.delete(id);
     }
 }
