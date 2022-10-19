@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jsPartyrooms.js"></script>
+  <meta charset="UTF-8">
+  <title>Salones</title>
+</head>
+
+<body onload="traerDatos()">
+<div style="padding: 25px; width: 20%; margin: auto">
+  <h1 style="text-align: center">SALONES</h1>
+  <table id="tabla" class= "table table-bordered ">
+
+  </table>
+  <input class="form-control" type="text" placeholder="Nombre del salon" id="name" /><br><br>
+
+  <input class="form-control" type="text" placeholder="Nombre dueño del salon" id="owner" /><br><br>
+
+  <input class="form-control" type="number" placeholder="Capacidad del salon" id="capacity" /><br><br>
+
+  <input class="form-control" type="text" placeholder="Descripcion" id="description" /><br><br>
+
+  <input class="form-control" type="number" placeholder="Categoria" id="categoryId" /><br><br>
+
+</div>
+
+<div style="text-align: center">
+  <button onclick="" class="btn btn-success">Guardar Salon</button>
+  <button onclick="" class="btn btn-success">Consultar Salones</button>
+  <button onclick="location.href = 'menu.html';" class="btn btn-primary">Volver</button><br><br>
+</div>
+</body>
+</html>

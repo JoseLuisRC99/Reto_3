@@ -17,16 +17,16 @@
     Para iniciar sesion con Github:
     <a href="/oauth2/authorization/github">Haz click</a>
 </div>
-<div class="container authenticated" style="...">
+<div class="container authenticated" style="display: none">
     Autenticado como: <span id="user"></span>
 </div>
-<button onclick="location.href = 'Privado.html';">Ir a la APP</button>
+<button onclick="location.href = 'menu.html';">Ir a la APP</button>
 </body>
 <script type="text/javascript">
     $.get("/user", function (data){
         $("#user").html(data.name);
         $(".unauthenticated").hide()
         $(".authenticated").show()
-    })
+    });
 </script>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jsCategory.js"></script>
+  <meta charset="UTF-8">
+  <title>categoria</title>
+</head>
+
+<body onload="traerDatosCategory()">
+<div style="padding: 25px; width: 20%; margin: auto">
+  <h1 style="text-align: center">CATEGORIAS</h1>
+  <table id="tabla" class= "table table-bordered ">
+
+  </table>
+
+  <input class="form-control" type="text" placeholder="Nombre de la categoria" id="name" /><br><br>
+
+  <input class="form-control" type="text" placeholder="Descripcion de la categoria" id="owner" /><br><br>
+
+</div>
+
+<div style="text-align: center">
+  <button onclick="guardarDatosCategory()" class="btn btn-success">Guardar Categoria</button>
+  <button onclick="" class="btn btn-success">Consultar Categorias</button>
+  <button onclick="location.href = 'menu.html';" class="btn btn-primary">Volver</button><br><br>
+</div>
+</body>
+</html>
